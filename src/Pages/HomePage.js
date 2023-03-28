@@ -44,42 +44,38 @@ const HomePage = () => {
       <NavSection />
       <CarouselItem />
       <div className='feature_section'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col feature_content'>
-              <div>
-                <GrServices style={{ color: "#90bb13" }} />
-              </div>
-              <h6>Creative Services</h6>
-              <p>
-                As a professional agency, we’ve spent over 20 years learning
-                about consumer mindsets and most effective advertising methods
-                to reach them.
-              </p>
-            </div>
-            <div className='col feature_content'>
-              <div>
-                <GrServices style={{ color: "#90bb13" }} />
-              </div>
-              <h6>Internet Marketing</h6>
-              <p>
-                The Internet marketing space can be confusing. Our experienced
-                Internet marketing, web designers and social media consultants
-                will simplify it for you.
-              </p>
-            </div>
-            <div className='col feature_content'>
-              <div>
-                <GrServices style={{ color: "#90bb13" }} />
-              </div>
-              <h6>Advertising Design</h6>
-              <p>
-                Over the last 20 years, we’ve learned many things about
-                Business-to-Business (B2B) , Business-to-Consumer (B2C) and
-                consumer mindsets.
-              </p>
-            </div>
+        <div className=' feature_content'>
+          <div>
+            <GrServices style={{ color: "#90bb13" }} />
           </div>
+          <h6>Creative Services</h6>
+          <p>
+            As a professional agency, we’ve spent over 20 years learning about
+            consumer mindsets and most effective advertising methods to reach
+            them.
+          </p>
+        </div>
+        <div className=' feature_content'>
+          <div>
+            <GrServices style={{ color: "#90bb13" }} />
+          </div>
+          <h6>Internet Marketing</h6>
+          <p>
+            The Internet marketing space can be confusing. Our experienced
+            Internet marketing, web designers and social media consultants will
+            simplify it for you.
+          </p>
+        </div>
+        <div className=' feature_content'>
+          <div>
+            <GrServices style={{ color: "#90bb13" }} />
+          </div>
+          <h6>Advertising Design</h6>
+          <p>
+            Over the last 20 years, we’ve learned many things about
+            Business-to-Business (B2B) , Business-to-Consumer (B2C) and consumer
+            mindsets.
+          </p>
         </div>
       </div>
       {/* Shop Section */}
@@ -100,7 +96,7 @@ const HomePage = () => {
           <div className='container'>
             <div className='row'>
               {data.map((item, index) => (
-                <div className='col-4' key={index}>
+                <div className='col-md-4 col-12' key={index}>
                   <img src={item.image} alt='' style={{ width: "50%" }} />
                   <h5>{item.header}</h5>
                   <p

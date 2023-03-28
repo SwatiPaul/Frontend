@@ -8,7 +8,7 @@ const BenefitBook = () => {
     <div className='benefit_section'>
       <div className='container'>
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-md-6 col-12'>
             <h5>Something magical happen when you read this eBook</h5>
             <p>
               Who loves or pursues or desires to obtain pain of itself, because
@@ -120,7 +120,7 @@ const BenefitBook = () => {
             </div>
           </div>
 
-          <div className='col-6'>
+          <div className='col-md-6 col-12'>
             <img src={image} alt='' style={{ width: "60%" }} />
           </div>
         </div>

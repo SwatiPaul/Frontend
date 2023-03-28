@@ -27,7 +27,7 @@ const Footer = () => {
             <h5>Make Payment Your Comfortable Way</h5>
             <div className='row card_container'>
               {Card.map((item, index) => (
-                <div className='col-3' key={index}>
+                <div className='col-md-3 col-3' key={index}>
                   <a href='#'>
                     <img src={item.image} alt='' style={{ width: "55%" }} />
                   </a>
@@ -40,7 +40,7 @@ const Footer = () => {
       <div className='footer_botttom'>
         <div className='container'>
           <div className='row'>
-            <div className='col-6' style={{ textAlign: "left" }}>
+            <div className='col-md-6 col-5' style={{ textAlign: "left" }}>
               <p
                 style={{
                   textDecoration: "none",
@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
               </p>
             </div>
-            <div className='col-6' style={{ textAlign: "right" }}>
+            <div className='col-md-6 col-7' style={{ textAlign: "right" }}>
               <ul className='list_style'>
                 <li>
                   <a href='#'>Search</a>

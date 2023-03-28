@@ -98,20 +98,22 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid #ededed;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .feature_content {
   align-items: center !important;
   text-align: -webkit-center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  transition: width 80s;
+  /* transition: width 80s; */
 }
 .feature_content:hover {
   border-top: 1px solid #82b440;
   border-bottom: 1px solid #82b440;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 1rem;
+  /* width: 1rem; */
 }
 .feature_content div {
   background: #eeeeee;
@@ -250,4 +252,28 @@
   font-weight: 500;
   font-size: 13px;
   margin: 0rem 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .form_field {
+    display: grid;
+  }
+  .form_field input {
+    width: 80%;
+  }
+  .submit-btn {
+    margin: 1rem 2rem;
+    padding: 10px 20px;
+  }
+  .feature_section {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .feature_content {
+    width: 100%;
+    transition: none;
+  }
+  .card_container {
+    width: 80%;
+  }
 }
